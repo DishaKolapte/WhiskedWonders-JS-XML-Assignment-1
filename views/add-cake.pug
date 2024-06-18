@@ -1,0 +1,26 @@
+extends common/layout
+
+block layout-content
+    section#add-section
+        h2 Add New Cake
+        form(action='/cakes/add', method='POST')
+            div
+                label(for='name') Name:
+                input(type='text', name='name', required)
+            div
+                        
+                label(for='imageUrl') Image URL:
+                input(type='text', name='imageUrl', required)
+            div 
+
+                label(for='description') Description:
+                textarea(name='description', required)
+            div
+                label(for='price') Price:
+                input(type='text', name='price', required)
+            div
+                label(for='quantity') Quantity:
+                input(type='number', name='quantity', required)
+            div
+                button(type='submit') Add Cake
+

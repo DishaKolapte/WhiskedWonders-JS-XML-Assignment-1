@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header styles*/
+
+#header {
+  background-color: #faf8f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+#site-name {
+  font-size: 2em;
+  font-weight: 300;
+  padding-left: 10px;
+  color: #343a40;
+  margin: 0;
+}
+
+#site-name a {
+  text-decoration: none;
+  color: #512929;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 10 px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  margin: 10px;
+  font-size: 1.2em;
+  color: #495057;
+  transition: color 0.3s ease-in-out;
+  font-weight: 300;
+}
+
+nav ul li a:hover {
+  color: #212529;
+}
+
+header#header nav ul li a[href="/add"] {
+  color: red;
+}
+
+.main-content {
+  background-image: url("../images/Background.jpg");
+  background-repeat: no-repeat;
+  height: 550px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.main-content p {
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #fff;
+  font-weight: 200;
+
+}
+
+.main-content h1.page-title {
+
+  text-align: center;
+  padding-top: 150px;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 300;
+
+}
+
+/*About page styles*/
+section#about-section {
+  background-image: url("../images/About-background.jpg");
+  background-repeat: no-repeat;
+  height: 550px;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  margin: 0 auto;
+  padding: 2rem;
+
+}
+
+section#about-section ul {
+  list-style: circle;
+  margin: 1rem 0;
+}
+
+section#about-section ul li p {
+  margin: 0.5rem 0;
+}
+
+section#about-section h2 {
+  margin-top: 1.5rem;
+}
+
+/* Products page styles*/
+
+#products-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 100%;
+
+}
+
+/* Individual cake cards */
+#products-section div {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
+  width: calc(33% - 2rem);
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the cake image */
+#products-section div img {
+  width: 200px;
+  height: 200px;
+}
+
+
+#products-section div h2,
+#products-section div p {
+  margin: 0.5rem 0;
+
+}
+
+
+/*Admin panel styles*/
+
+section#add-section {
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 2rem;
+  margin: 1rem;
+  max-width: 500px;
+}
+
+section#add-section h2 {
+  margin-bottom: 1rem;
+}
+
+section#add-section form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+section#add-section form input,
+section#add-section textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1rem;
+
+}
+
+
+section#add-section form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 1rem;
+
+}
+
+
+section#add-section form button:hover {
+  background-color: #3e8e41;
+}
+
+/* Footer Styles */
+
+footer#footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+footer#footer div {
+  font-size: 0.8rem;
+  color: #333;
+}

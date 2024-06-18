@@ -1,0 +1,12 @@
+extends common/layout
+
+block layout-content
+  section#products-section 
+   each cake in cakes 
+    div 
+      h2 #{cake.name}
+      img(src=cake.imageUrl, alt=cake.name)
+      p <strong>Description:</strong> #{cake.ingredients}
+      p <strong>Price:</strong> #{cake.price}
+      p <strong>Quantity:</strong> #{cake.quantity} 
+
